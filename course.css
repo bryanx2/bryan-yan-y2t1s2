@@ -1,0 +1,413 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Sen', sans-serif;
+}
+
+nav {
+    background: #333333;
+    padding: 0 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu li {
+    font-size: 1em;
+    padding: 1em 0.25em;
+}
+
+.menu li a {
+    display: block;
+}
+
+.logo a {
+    font-size: 1.25em;
+}
+
+/*Mobile Menu*/
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    order: 1;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.header-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(vids-pics/jeremy-lapak-CVvFVQ_-oUg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-image:after {
+    position: absolute;
+    height: 100%;
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transform: skewY(-15deg);
+}
+
+.divider {
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+    background-color: #333;
+    transform-origin: bottom right;
+    transform: skewY(-10deg);
+    display: block;
+    text-align: right;
+    color: white;
+    padding-right: 1.875em;
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 5em;
+
+}
+
+.detail {
+    display: inline-grid;
+    padding: 3em 0em 3em 0em;
+    margin-left: 1em;
+}
+
+.grey-box {
+    height: 5em;
+    width: 11em;
+    background-color: #333;
+    margin: 6.25em 1.875em 0 1.875em;
+    text-align: center;
+    padding: 1.5em;
+    color: white;
+    align-items: center;
+}
+
+.orange-box {
+    position: absolute;
+    top: -0.625em;
+    right: -1.25em;
+    height: 1.8em;
+    width: 5.8em;
+    background-color: #ED4D38;
+    text-align: center;
+    padding: 0.4em 0.2em 0.4em 0.2em;
+    color: black;
+}
+
+.skew {
+    transform: skewX(-15deg)
+}
+
+.inverse-skew {
+    transform: skewX(15deg)
+}
+
+.map-image {
+            position: relative;
+            height: 40vh;
+            width: 100vw;
+            background-image: url(vids-pics/walking-maps-motutapu.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        .map-image:after {
+            position: absolute;
+            height: 100%;
+            content: "";
+            background: inherit;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform-origin: bottom right;
+            transform: skewY(-5deg);
+        }
+
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10vw;
+    height: 60vh;
+}
+
+.sum-img {
+    background-image: url(vids-pics/jeremy-lapak-CVvFVQ_-oUg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    margin-right: -1em;
+}
+
+.sum-text {
+    margin: auto;
+    margin-left: -1em;
+    padding-right: 1em;
+}
+
+.footer {
+    height: 30vh;
+    background-color: #333;
+    transform: skewY(-10deg);
+    transform-origin: bottom;
+    transform: skewY(0deg);
+    z-index: 1;
+    position: relative;
+}
+
+/*Table Menu*/
+@media all and (min-width:468px) {
+
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .item.button {
+        width: 118px;
+        order: 1;
+        display: block;
+        transform: skewX(20deg);
+        background: #ED4D38;
+        border: 1px solid #000;
+        padding-right: 4px;
+    }
+
+    .toggle {
+        order: 2;
+    }
+
+    .button a {
+        text-decoration: none;
+        transform: skewX(-20deg);
+
+    }
+
+    .button a:hover {
+        transition: all .25s;
+    }
+    .header-image {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url(vids-pics/jeremy-lapak-CVvFVQ_-oUg-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .header-image:after {
+            position: absolute;
+            height: 100%;
+            content: "";
+            background: inherit;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform-origin: bottom right;
+            transform: skewY(-5deg);
+        }
+    
+.detail {
+            display: inline-grid;
+        }
+    
+    .divider {
+        width: 100vw;
+        height: 20vh;
+        position: relative;
+        background-color: #333;
+        transform-origin: bottom right;
+        transform: skewY(-5deg);
+        display: block;
+        text-align: right;
+        color: white;
+        font-size: 2em;
+        padding-right: 1.875em;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    
+    /*Desktop Menu*/
+    @media all and (min-width: 768px) {
+
+        .item {
+            display: block;
+            width: auto;
+        }
+
+        .toggle {
+            display: none;
+        }
+
+        .logo {
+            order: 0;
+        }
+
+        .item {
+            order: 1;
+        }
+
+        .button {
+            order: 2;
+        }
+
+        .menu li {
+            padding: 0.9375em 0.625
+        }
+
+        .header-image {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url(vids-pics/jeremy-lapak-CVvFVQ_-oUg-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .header-image:after {
+            position: absolute;
+            height: 100%;
+            content: "";
+            background: inherit;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform-origin: bottom right;
+            transform: skewY(-5deg);
+        }
+
+        .detail {
+            display: inline-grid;
+            padding: 3em 0em 3em 0em;
+            margin: 5em 3em;
+
+        }
+
+        .grey-box {
+            height: 8vh;
+            width: 15vh;
+            background-color: #333;
+            margin: 6.25em 1.875em 0 1.875em;
+            text-align: center;
+            padding: 1.5em;
+            color: white;
+            align-items: center;
+            font-size: 1.1em;
+        }
+
+        .orange-box {
+            position: absolute;
+            top: -0.625em;
+            right: -1.25em;
+            height: 3vh;
+            width: 10vh;
+            background-color: #ED4D38;
+            text-align: center;
+            padding: 0.4em 0.2em 0.4em 0.2em;
+            color: black;
+        }
+
+        .skew {
+            transform: skewX(-15deg)
+        }
+
+        .inverse-skew {
+            transform: skewX(15deg)
+        }
+
+        .map-image {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            background-image: url(vids-pics/walking-maps-motutapu.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        .map-image:after {
+            position: absolute;
+            height: 100%;
+            content: "";
+            background: inherit;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform-origin: bottom right;
+            transform: skewY(-5deg);
+        }
+
+        .summary {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10vw;
+            height: 100vh;
+        }
+
+        .sum-img {
+            background-image: url(vids-pics/jeremy-lapak-CVvFVQ_-oUg-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+            margin-right: -1em;
+        }
+
+        .sum-text {
+            margin: auto;
+            margin-left: -1em;
+            padding-right: 4em;
+            font-size: 2em
+        }
+    }

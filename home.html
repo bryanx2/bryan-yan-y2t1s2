@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8" content="width=device-width, intial-scale=" 1>
+    <title>7 Wonder Run</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Sen:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="home.html"><img src="vids-pics/logo.svg" alt="Logo"></a></li>
+            <li class="item"><a href="home.html">Home</a></li>
+            <li class="item"><a href="course.html">Courses</a></li>
+            <li class="item"><a href="category.html">Sign Up</a></li>
+            <li class="item button"><a href="category.html"><span>ENTER NOW</span></a></li>
+            <li class="toggle"><img src="vids-pics/nav%20icon.svg" alt="bars"></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="slant1">
+
+        </div>
+        <div class="divider">
+            <h2>Course</h2>
+        </div>
+        <div class="grey-bar">
+
+        </div>
+        <div class="course">
+
+            <a href="course.html">
+                <div class="slant slant3">
+                    <div class="skew">
+                        <h3 class="position">Motutapu Island | 20km </h3>
+                    </div>
+                </div>
+            </a>
+            <a href="course.html">
+                <div class="slant slant4">
+                    <div class="skew">
+                        <h3 class="position">Milford Sound | 11km </h3>
+                    </div>
+                </div>
+            </a>
+            <a href="course.html">
+                <div class="slant slant5">
+                    <div class="skew">
+                        <h3 class="position">Lake Taupo| 15km </h3>
+                    </div>
+                </div>
+            </a>
+            <a href="course.html">
+                <div class="slant slant6">
+                    <div class="skew">
+                        <h3 class="position">Lake Wakaitpu | 10km</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="course.html">
+                <div class="slant slant7">
+                    <div class="skew">
+                        <h3 class="position">Ninety Mile Beach | 44km </h3>
+                    </div>
+                </div>
+            </a>
+            <a href="course.html">
+                <div class="slant slant8">
+                    <div class="skew">
+                        <h3 class="position">Ruapehu | 24km </h3>
+                    </div>
+                </div>
+            </a>
+            <a href="course.html">
+                <div class="slant slant9">
+                    <div class="skew">
+                        <h3 class="position">Cape Reinga | 9km </h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="last"></div>
+    </main>
+</body>
+
+<script src="home.js"></script></html>

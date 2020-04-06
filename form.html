@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8" content="width=device-width, intial-scale=" 1>
+    <title>7 Wonder Run</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Sen:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+            <ul class="menu">
+        <li class="logo"><a href="home.html"><img src="vids-pics/logo.svg" alt="Logo"></a></li>
+        <li class="item"><a href="home.html">Home</a></li>
+        <li class="item"><a href="course.html">Courses</a></li>
+        <li class="item"><a href="category.html">Sign Up</a></li>
+        <li class="item button"><a href="category.html"><span>ENTER NOW</span></a></li>
+        <li class="toggle"><img src="vids-pics/nav%20icon.svg" alt="bars"></li>
+    </ul>
+    </nav>
+    <div class="header-image"></div>
+    <div class="divider">
+        <button id="b1">Select Category</button>
+        <button id="b2">Complete Form</button>
+        <button>Check Out</button>
+    </div>
+    <form name="participant" method="post" action="contact.php">
+
+        <fieldset class="center-this">
+            <label for="firstName">First Name</label>
+        
+            <input type="text" name="firstName" maxlength="80" size="25">
+            <br><br>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" maxlength="80" size="25">
+            <br><br>
+            <label for="dob">Date of birth</label>
+            <input type="text" name="dob" maxlength="80" size="25">
+            <br><br>
+            <label for="telephone">Cell phone</label>
+            <input type="text" name="telephone" maxlength="80" size="25">
+            <br><br>
+            <label for="country">Country</label>
+            <input type="text" name="country" maxlength="80" size="25">
+            <br><br>
+            <label for="address">Address</label>
+            <input type="text" name="address" maxlength="80" size="25">
+            <br><br>
+            <label for="city">City</label>
+            <input type="text" name="city" maxlength="80" size="25">
+            <br><br>
+            <label for="zipcode">Zipcode</label>
+            <input type="text" name="zipcode" maxlength="80" size="25">
+            <br><br>
+            <label for="ecp">Emergency contact phone</label>
+            <input type="text" name="ecp" maxlength="80" size="20">
+            <br><br>
+            <label for="ecn">Emergency contact name</label>
+            <input type="text" name="ecn" maxlength="80" size="20">
+            <br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+
+<script src="home.js"></script></html>

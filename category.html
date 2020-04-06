@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Sen:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+            <ul class="menu">
+        <li class="logo"><a href="home.html"><img src="vids-pics/logo.svg" alt="Logo"></a></li>
+        <li class="item"><a href="home.html">Home</a></li>
+        <li class="item"><a href="course.html">Courses</a></li>
+        <li class="item"><a href="category.html">Sign Up</a></li>
+        <li class="item button"><a href="category.html"><span>ENTER NOW</span></a></li>
+        <li class="toggle"><img src="vids-pics/nav%20icon.svg" alt="bars"></li>
+    </ul>
+    </nav>
+    <div class="header-image"></div>
+    <div class="divider">
+        <button id="b1">Select Category</button>
+        <button>Complete Form</button>
+        <button>Check Out</button>
+    </div>
+    <section>
+        <h2>7 Wonder Run 2020</h2>
+        <h3>General Entry</h3>
+        <article>
+            <label class="box">
+                <h4>Ninety Miles Beach</h4>
+                <h4 class="right">NZD 100.00</h4>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark></span>
+            </label>
+            <label class="box1">
+                <h5>Ages 18 and over as of 1/06/2020</h5>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark1></span>
+            </label>
+        </article>
+        <article>
+            <label class="box">
+                <h4>Milford Sound</h4>
+                <h4 class="right">NZD 100.00</h4>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark></span>
+            </label>
+            <label class="box1">
+                <h5>Ages 18 and over as of 1/07/2020</h5>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark1></span>
+            </label>
+        </article>
+        <article>
+            <label class="box">
+                <h4>Lake Taupo</h4>
+                <h4 class="right">NZD 100.00</h4>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark></span>
+            </label>
+            <label class="box1">
+                <h5>Ages 18 and over as of 1/08/2020</h5>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark1></span>
+            </label>
+        </article>
+        <article>
+            <label class="box">
+                <h4>Lake Wakaitpu</h4>
+                <h4 class="right">NZD 100.00</h4>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark></span>
+            </label>
+            <label class="box1">
+                <h5>Ages 18 and over as of 1/09/2020</h5>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark1></span>
+            </label>
+        </article>
+        <article>
+            <label class="box">
+                <h4>Motatapu Island</h4>
+                <h4 class="right">NZD 100.00</h4>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark></span>
+            </label>
+            <label class="box1">
+                <h5>Ages 18 and over as of 1/10/2020</h5>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark1></span>
+            </label>
+        </article>
+        <article>
+            <label class="box">
+                <h4>Ruapehu</h4>
+                <h4 class="right">NZD 100.00</h4>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark></span>
+            </label>
+            <label class="box1">
+                <h5>Ages 18 and over as of 1/11/2020</h5>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark1></span>
+            </label>
+        </article>
+        <article>
+            <label class="box">
+                <h4>Cape Reinga</h4>
+                <h4 class="right">NZD 100.00</h4>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark></span>
+            </label>
+            <label class="box1">
+                <h5>Ages 16 and over as of 1/12/2020</h5>
+                <input type="checkbox" checked="checked">
+                <span class=checkmark1></span>
+            </label>
+        </article>
+        <article id="line">
+            
+        </article>
+        
+    </section>
+<button class="continue">Continue</button>
+     
+
+</body></html>

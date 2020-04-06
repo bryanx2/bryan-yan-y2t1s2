@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Sen', sans-serif;
+}
+
+
+nav {
+    background: #333333;
+    padding: 0 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu li {
+    font-size: 1em;
+    padding: 1em 0.25em;
+}
+
+.menu li a {
+    display: block;
+}
+
+.logo a {
+    font-size: 20px;
+}
+
+/*Mobile Menu*/
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    order: 1;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.header-image {
+    height: 40vh;
+    width: 100%;
+    position: relative;
+}
+
+.header-image:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transform: skewY(-10deg);
+}
+
+.divider {
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    background-color: #333;
+    transform-origin: bottom right;
+    transform: skewY(-10deg);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+#b1{
+        color: #ED4D38;
+    }
+
+button {
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+section {
+    display: block;
+    margin: 10em 1.875em 0 1.875em;
+}
+
+article {
+    margin-bottom: 0.625em;
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+h3 {
+    margin-bottom: 1.3em;
+    font-size: 2em;
+    color: #686868;
+}
+
+h4 {
+    display: inline-flex;
+    font-size: 0.75em;
+}
+
+.right {
+    float: right;
+}
+
+h5 {
+    font-size: 0.5625em;
+    color: #686868;
+}
+
+/*checkbox*/
+.box {
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    margin-bottom: 0.75em;
+    cursor: pointer;
+    font-size: 1.375em;
+}
+
+.box1 {
+    display: block;
+    position: relative;
+    padding-left: 1.5em;
+    margin-left: 2em;
+    margin-bottom: 0.75em;
+    cursor: pointer;
+    font-size: 1.375em;
+}
+
+.box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.box1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5625em;
+    width: 1.5625em;
+    background-color: #eee;
+}
+
+.checkmark1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1em;
+    width: 1em;
+    background-color: #eee;
+}
+
+.box:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.box input:checked ~ .checkmark {
+    background-color: #ED4D38;
+}
+
+.box1:hover input ~ .checkmark1 {
+    background-color: #ccc;
+}
+
+.box1 input:checked ~ .checkmark1 {
+    background-color: #ED4D38;
+}
+
+.box input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.box input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.box .checkmark:after {
+    left: 0.5625em;
+    top: 0.3125em;
+    width: 0.3125em;
+    height: 0.625em;
+    border: solid white;
+    border-width: 0 0.1875em 3px 0;
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.continue {
+    background-color: #ED4D38;
+    width: 7.25em;
+    height: 2em;
+    margin: 1.5em;
+    float: right;
+    right: 0;
+    font-size: 0.875em;
+}
+
+/*Desktop Menu*/
+@media all and (min-width: 768px) {
+    
+    .header-image {
+    height: 65vh;
+    width: 100%;
+    position: relative;
+}
+    .divider {
+        width: 100%;
+        height: 10vh;
+        position: relative;
+        background-color: #333;
+        transform-origin: bottom right;
+        transform: skewY(-5deg);
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 2em;
+    }
+    #b1{
+        color: #ED4D38;
+    }
+    section {
+        display: block;
+        margin: 15em 
+    }
+    h2{
+        font-size: 3em;
+    }
+    h3{
+        font-size: 2em;
+    }
+    
+    article {
+        margin: 4em 0;    
+    }
+    
+    h4{
+        font-size: 1em;
+    }
+    
+    h5{
+        font-size: 0.8em;
+    }
+    
+    #line {
+        height: 2px;
+        width: 100%;
+        background-color: #686868
+    }
+    .continue {
+        background-color: #ED4D38;
+        width: 9.25%;
+        height: 2em;
+        float: right;
+        right: 0;
+        font-size: 1.5em;
+        margin-right: 9em;
+    }
+}

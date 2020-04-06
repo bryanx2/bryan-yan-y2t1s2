@@ -1,0 +1,571 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sen', sans-serif;
+*/
+
+body {
+    background-color: #333;
+    font-family: 'Sen', sans-serif;
+    /*    overflow-x: hidden;*/
+}
+
+nav {
+    background: #333333;
+    padding: 0 16px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu li {
+    font-size: 1em;
+    padding: 1em 0.25em;
+}
+
+.menu li a {
+    display: block;
+}
+
+.logo a {
+    font-size: 20px;
+}
+
+/*Mobile Menu*/
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    order: 1;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.slant1 {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background-image: url(vids-pics/jeremy-lapak-CVvFVQ_-oUg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+.fit{
+    max-height: 100%;
+    height: 75vh;
+    max-width: 100%;
+    width: 100%;
+    display: block; 
+}
+*/
+/*
+.skew{
+    transform: rotate(270deg) skewX(10deg);
+    width: 100%;
+    height: 2em;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    z-index: 9;
+    text-align: center;
+    top: 50%;
+    right: -47%;
+    background-color: rgba(51, 51, 51, 0.3);
+}
+*/
+
+.grey-bar {
+    background-color: rgba(51, 51, 51, 0.3);
+    position: absolute;
+    right: 0;
+    height: 3000px;
+    width: 2em;
+    margin-top: -61px;
+    transform: skewY(-10deg);
+    z-index: -1;
+}
+
+h3 {
+    transform: rotate(270deg);
+    color: white;
+    width: 100%;
+    height: 2em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    text-align: center;
+    top: 50%;
+    right: -47%;
+}
+
+.slant1:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transform: skewY(-10deg);
+}
+
+.divider {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    background-color: #333;
+    transform-origin: bottom right;
+    transform: skewY(-5deg);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: ;
+    z-index: 1;
+    top: -4em;
+}
+
+.slant {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background: #d3d3d3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -4em;
+}
+
+.slant:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transform: skewY(-10deg);
+}
+
+.slant3 {
+    z-index: -2;
+    background-image: url(vids-pics/todd-diemer-ckfkPwCEMNs-unsplash.jpg);
+}
+
+.slant4 {
+    z-index: -3;
+    background-image: url(vids-pics/david-marcu-8TJbrQGKFyU-unsplash.jpg);
+}
+
+.slant5 {
+    z-index: -4;
+    background-image: url(vids-pics/prayer-x-dDc1iSSkWR8-unsplash.jpg);
+}
+
+.slant6 {
+    z-index: -5;
+    background-image: url(vids-pics/zac-ong-RYvOI54rmPw-unsplash.jpg);
+}
+
+.slant7 {
+    z-index: -6;
+    background-image: url(vids-pics/stephan-wieser-Z9PBILxrkBc-unsplash.jpg);
+}
+
+.slant8 {
+    z-index: -7;
+    background-image: url(vids-pics/KurtMatthews-1373.jpg);
+}
+
+.slant9 {
+    z-index: -8;
+    background-image: url(vids-pics/kaleb-johnston-W5xcz6MjtgY-unsplash.jpg);
+}
+
+.last {
+    height: 20vh;
+    transform: skewY(-10deg);
+}
+
+
+/*Table Menu*/
+@media all and (min-width:468px) {
+
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .item.button {
+        width: 118px;
+        order: 1;
+        display: block;
+        transform: skewX(20deg);
+        background: #ED4D38;
+        border: 1px solid #000;
+        padding-right: 4px;
+    }
+
+    .toggle {
+        order: 2;
+    }
+
+    .button a {
+        text-decoration: none;
+        transform: skewX(-20deg);
+
+    }
+
+    .button a:hover {
+        transition: all .25s;
+    }
+
+    .slant1 {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        background-image: url(vids-pics/jeremy-lapak-CVvFVQ_-oUg-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .slant1:after {
+        position: absolute;
+        height: 100%;
+        background: inherit;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform-origin: bottom right;
+        transform: skewY(-5deg);
+    }
+
+    .divider {
+        width: 100%;
+        height: 20vh;
+        position: relative;
+        background-color: #333;
+        transform-origin: bottom right;
+        transform: skewY(-10deg);
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        font-size:
+    }
+
+    .course {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .grey-bar {
+        display: none;
+    }
+
+    h3 {
+        transform: rotate(-5deg);
+        text-align: right;
+        right: 15%;
+        padding-right: .1em;
+        line-height: inherit;
+        font-size: 1.8em;
+    }
+
+    .slant {
+        display: inline-grid;
+        position: relative;
+        height: 100vh;
+        background: #d3d3d3;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 0;
+        padding: 0;
+        width: 100%;
+
+    }
+
+    .slant:after {
+        position: absolute;
+        width: ;
+        height: 100%;
+        background: inherit;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform-origin: bottom right;
+        transform: skewY(-5deg);
+    }
+
+    .skew {
+        background-color: rgba(51, 51, 51, 0.3);
+        width: 100%;
+        height: 100%;
+        right: 0;
+        position: absolute;
+    }
+
+    .slant3 {
+        z-index: -2;
+        background-image: url(vids-pics/todd-diemer-ckfkPwCEMNs-unsplash.jpg);
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+
+    .slant4 {
+        z-index: -3;
+        background-image: url(vids-pics/david-marcu-8TJbrQGKFyU-unsplash.jpg);
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+
+    .slant5 {
+        z-index: -4;
+        background-image: url(vids-pics/prayer-x-dDc1iSSkWR8-unsplash.jpg);
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .slant6 {
+        z-index: -5;
+        background-image: url(vids-pics/zac-ong-RYvOI54rmPw-unsplash.jpg);
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .slant7 {
+        z-index: -6;
+        background-image: url(vids-pics/stephan-wieser-Z9PBILxrkBc-unsplash.jpg);
+    }
+
+    .slant8 {
+        z-index: -7;
+        background-image: url(vids-pics/KurtMatthews-1373.jpg);
+    }
+
+    .slant9 {
+        z-index: -8;
+        background-image: url(vids-pics/kaleb-johnston-W5xcz6MjtgY-unsplash.jpg);
+    }
+
+    .last {
+        display: inline-block;
+        width: 100%;
+        height: 20vh;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        background-color: #333;
+    }
+}
+
+/*Desktop Menu*/
+@media all and (min-width: 768px) {
+
+    .item {
+        display: block;
+        width: auto;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .menu li {
+        padding: 0.9375em 0.625
+    }
+
+    .slant1 {
+        position: relative;
+        width: 100%;
+        height: 75vh;
+        background-image: url(vids-pics/kalen-emsley-7bwQXzbF6KE-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .slant1:after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: inherit;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform-origin: bottom right;
+        transform: skewY(-5deg);
+    }
+
+    .divider {
+        width: 100%;
+        height: 30vh;
+        position: inherit;
+        background-color: #333;
+        transform-origin: bottom right;
+        transform: skewY(-5deg);
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        font-size: 3em;
+    }
+
+    .course {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 100vh;
+    }
+
+    .grey-bar {
+        display: none;
+    }
+
+    h3 {
+        transform: rotate(-5deg);
+        right: 0;
+
+    }
+
+    .slant {
+        display: inline-grid;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: #d3d3d3;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .slant:after {
+        position: absolute;
+        height: 100%;
+        content: "";
+        background: inherit;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform-origin: bottom right;
+        transform: skewY(-5deg);
+    }
+
+    .slant3 {
+        z-index: -2;
+        background-image: url(vids-pics/todd-diemer-ckfkPwCEMNs-unsplash.jpg);
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-template-rows: 1;
+    }
+
+
+    .slant4 {
+        z-index: -3;
+        background-image: url(vids-pics/david-marcu-8TJbrQGKFyU-unsplash.jpg);
+    }
+
+
+    .slant5 {
+        z-index: -4;
+        background-image: url(vids-pics/prayer-x-dDc1iSSkWR8-unsplash.jpg);
+    }
+
+    .slant6 {
+        z-index: -5;
+        background-image: url(vids-pics/zac-ong-RYvOI54rmPw-unsplash.jpg);
+    }
+
+    .slant7 {
+        z-index: -6;
+        background-image: url(vids-pics/stephan-wieser-Z9PBILxrkBc-unsplash.jpg);
+    }
+
+    .slant8 {
+        z-index: -7;
+        background-image: url(vids-pics/KurtMatthews-1373.jpg);
+    }
+
+    .slant9 {
+        z-index: -8;
+        background-image: url(vids-pics/kaleb-johnston-W5xcz6MjtgY-unsplash.jpg);
+    }
+
+    .last {
+        display: inline-block;
+        width: 100%;
+        height: 20vh;
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        background-color: #333;
+    }
+}
